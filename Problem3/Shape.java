@@ -8,7 +8,7 @@ public abstract class Shape {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     // Abstract methods for area and perimeter

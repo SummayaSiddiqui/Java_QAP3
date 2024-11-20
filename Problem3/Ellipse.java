@@ -20,13 +20,13 @@ public class Ellipse extends Shape {
 
     @Override
     public double getArea() {
-        return PI * a * b; // πab
+        return Math.PI * this.a * this.b; // πab
     }
 
     @Override
     public double getPerimeter() {
         // Approximation formula for the perimeter of an ellipse
-        return PI * 2 * (pow(a, 2) + pow(b, 2)) - (pow(a - b, 2) / 2);
+        return Math.PI * 2 * (pow(a, 2) + pow(b, 2)) - (pow(a - b, 2) / 2);
     }
 }
 
