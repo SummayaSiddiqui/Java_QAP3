@@ -12,16 +12,15 @@ public abstract class Shape {
     }
 
     // Abstract methods for area and perimeter
-    public abstract double calculateArea();
-    public abstract double calculatePerimeter();
+    public abstract double getArea();
+    public abstract double getPerimeter();
 
     @Override
     public String toString() {
     return String.format("%s: Area = %.2f, Perimeter = %.2f", 
                          this.name, 
-                         calculateArea(), 
-                         calculatePerimeter());
+                         getArea(), 
+                         getPerimeter());
 }
 
 }
-

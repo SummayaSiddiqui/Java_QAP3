@@ -19,12 +19,12 @@ public class Ellipse extends Shape {
     }
 
     @Override
-    public double calculateArea() {
+    public double getArea() {
         return PI * a * b; // πab
     }
 
     @Override
-    public double calculatePerimeter() {
+    public double getPerimeter() {
         // Approximation formula for the perimeter of an ellipse
         return PI * 2 * (pow(a, 2) + pow(b, 2)) - (pow(a - b, 2) / 2);
     }

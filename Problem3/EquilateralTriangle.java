@@ -7,12 +7,12 @@ public class EquilateralTriangle extends Triangle {
     }
 
     @Override
-    public double calculateArea() {
+    public double getArea() {
         return Math.sqrt(3) / 4 * Math.pow(super.side1, 2); // Area of equilateral triangle
     }
 
     @Override
-    public double calculatePerimeter() {
+    public double getPerimeter() {
         return 3 * super.side1; // Perimeter of equilateral triangle
     }
 }
